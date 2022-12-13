@@ -80,6 +80,10 @@
             fill: var(--color-accent);
 }
 }
+    @include desktop{
+        font-size: 14px;
+    }
+
     }
 }
 

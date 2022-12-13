@@ -38,6 +38,10 @@
     color: var(--color-accent);
 }
 
+&--current{
+    color: var(--color-accent);
+}
+
 &--current::after {
     display: inline-block;
     content: '';

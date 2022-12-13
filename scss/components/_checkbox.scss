@@ -2,20 +2,11 @@
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: center;
     margin-bottom: 30px;
 }
 
 .checkbox{
-    &__input {
-    display: flex;
-
-    width: 16px;
-    height: 15px;
-    align-items: center;
-    justify-content: center;
-}
-
+   
 &__border {
     box-sizing: border-box;
     display: flex;
@@ -62,22 +53,26 @@
 &__label {
     display: block;
     font-size: 10px;
-    padding-left: 15px;
+    padding-left: 23px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     cursor: pointer;
     font-weight: 400;
-    margin-left: 8.38px;
+
+    
 
     @include mobile{
         font-size: 12px;
-        padding-left: 8px;
+        padding-left: 30px;
         
     }
 
+   
+
          @include desktop {
              font-size: 14px;
+            padding-left: 45px;
          }
 }
 
