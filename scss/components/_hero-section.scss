@@ -2,13 +2,55 @@
 
 
 .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/img-background.jpg);
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--color-background);
-    padding: 200px 0px;
+    padding: 118px 0px;
+
+    @include desktop{
+        padding: 200px 0;
+    }
+        @media screen and (max-width: 480px) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero@1x.jpg);
+            
+        }
+
+          @media screen and (min-device-pixel-ratio: 2) and (max-width: 480px),
+          screen and (min-resolution: 192dpi) and (max-width: 480px),
+          screen and (min-resolution: 2dppx) and (max-width: 480px) {
+              background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                  url(../images/hero@2x.jpg);
+          }
+    
+                   @media screen and (min-width:481px) {
+                       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                           url(../images/hero-tablet1x.jpg);
+                       
+                   }
+    
+          @media screen and (min-device-pixel-ratio: 2) and (min-width:481px),
+          screen and (min-resolution: 192dpi) and (min-width:481px),
+          screen and (min-resolution: 2dppx) and (min-width:481px) {
+              background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                  url(../images/hero-tablet@2x.jpg);
+              
+          }
+    
+                  @media screen and (min-width: 769px) {
+                      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                          url(../images/hero-desktop1x.jpg);
+                  }
+    
+          @media screen and (min-device-pixel-ratio: 2) and (min-width: 769px),
+          screen and (min-resolution: 192dpi) and (min-width: 769px),
+          screen and (min-resolution: 2dppx) and (min-width: 769px) {
+              background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                  url(../images/hero-desktop@2x.jpg);
+          }
+    
 
 
 &__container {
@@ -22,13 +64,18 @@
 &__title {
     letter-spacing: 0.06em;
     color: var(--color-title);
-    font-size: 44px;
+    font-size: 26px;
     text-transform: uppercase;
     font-weight: 900;
     line-height: 1.36;
-    max-width: 696px;
+    max-width: 360px;
     text-align: center;
     margin-bottom: 30px;
+
+    @include desktop{
+        max-width: 696px;
+        font-size: 44px;
+    }
 }
 
 }
