@@ -5,11 +5,25 @@
 
     &__container {
     display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    @include tablet{
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
    
 
     &--tail{
-            display: block;
+            display: flex;
+            align-items: center;
             flex-direction: column;
+
+            @include desktop{
+                align-items: flex-start;
+            }
         }
 
 }
@@ -44,13 +58,19 @@
 .address {
     display: block;
     margin-top: 20px;
+    text-align: center;
+
+    @include desktop{
+        text-align: left;
+    }
 
 &__location {
-    margin-top: 20px;
+    
     margin-bottom: 9px;
     white-space: nowrap;
 }
     &__info {
+        
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;

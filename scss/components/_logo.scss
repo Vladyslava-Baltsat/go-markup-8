@@ -6,7 +6,9 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
-
+    .footer &{
+        padding: 0;
+    }
 
 &--black-piece {
     color: var(--main-text-color);

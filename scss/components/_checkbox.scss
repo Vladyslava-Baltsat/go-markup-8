@@ -21,7 +21,7 @@
     display: flex;
     position: absolute;
     top: 50%;
-    left: 20px;
+    left: 0px;
     transform: translateY(-50%);
     align-items: center;
     justify-content: center;
@@ -34,6 +34,14 @@
     z-index: -1;
     transition: background-color var(--transition-duration) var(--transition-timing-function),
         fill-opacity var(--transition-duration) var(--transition-timing-function);
+
+        @include mobile{
+            left: 8px;
+        }
+
+                @include desktop {
+                    left: 15px;
+                }
 
      .checkbox__input:checked + & {
         border: none;
@@ -53,14 +61,24 @@
 
 &__label {
     display: block;
-    font-size: 14px;
-    padding-left: 8px;
+    font-size: 10px;
+    padding-left: 15px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     cursor: pointer;
     font-weight: 400;
     margin-left: 8.38px;
+
+    @include mobile{
+        font-size: 12px;
+        padding-left: 8px;
+        
+    }
+
+         @include desktop {
+             font-size: 14px;
+         }
 }
 
 &__link {
