@@ -2,20 +2,47 @@
     padding: 0 0;
     border-bottom: 1px solid #ececec;
 
+    &__burger-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            padding: 0 0;
+            color: #000;
+            background-color: rgba(0, 0, 0, 0);
+            cursor: pointer;
+            border: none;
+            outline: none;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
+    
+            @include tablet {
+                display: none;
+            }
+    
+        }
+
 
     &__container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 1200px;
-            height: 80px;
             margin: 0 auto;
         }
 
     &__nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-grow: 1;
+
+    @include tablet{
+        justify-content: start;
+    }
 
 }
 
