@@ -1,8 +1,10 @@
 .filters {
     list-style-type: none;
     display: flex;
-    justify-content: center;
-    gap: 8px;
+    justify-content: flex-start;
+    column-gap: 8px;
+    row-gap: 15px;
+    flex-wrap: wrap;
 
 &__button {
         background-color: #f5f4fa;
