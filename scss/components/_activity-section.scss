@@ -1,5 +1,10 @@
 .activity {
     padding-top: 0;
+    display: none;
+
+    @include desktop{
+        display: block;
+    }
 
     &__title {
             font-size: 36px;

@@ -134,7 +134,7 @@
             </div>
         </section>
 
-        <!-- <section class="section advantages">
+        <section class="section advantages">
             <div class="container">
 
                 <h2 class="section__title advantages__name visually-hidden">Наші переваги</h2>
@@ -174,9 +174,9 @@
                 </ul>
             </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="section activity">
+        <section class="section activity">
             <div class="container">
 
                 <h2 class="section__title activity__title">Чим ми займаємося</h2>
@@ -207,18 +207,34 @@
                 </ul>
 
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="section members">
+        <section class="section members">
             <div class="container">
                 <h2 class="section__title members__title">Наша команда</h2>
                 <ul class="members__list">
                     <li class="members__item">
                         <div class="members__cards">
-                            <img srcset="./images/product-designer.jpg 1x, ./images/product-designer@2x.jpg 2x"
-                                src="./images/image4.jpg"
-                                alt="Зображення одного з членів команди, а саме Ігора Дем`яненко на позиції Product Designer"
-                                width="270">
+        
+                                <picture>
+                                
+                                    <source srcset="
+                                                    ./images/team-1200-1@1x.jpg 1x,
+                                                    ./images/team-1200-1@2x.jpg 2x
+                                                  " media="(min-width: 1200px)" />
+                                
+                                    <source srcset="
+                                                    ./images/team-768-1@1x.jpg 1x,
+                                                    ./images/team-768-1@2x.jpg 2x
+                                                  " media="(min-width: 768px)" />
+                                
+                                    <source srcset="
+                                                    ./images/team-480-1@1x.jpg 1x,
+                                                    ./images/team-480-1@2x.jpg 2x
+                                                  " />
+                                    <img class="image" src="./images/team-480-1@1x.jpg"
+                                     alt="Зображення одного з членів команди, а саме Ігора Дем`яненко на позиції Product Designer" />
+                                </picture>
                             <div class="cardsmember">
                                 <h3 class="cardsmember__name">Ігор Демяненко</h3>
                                 <p class="cardsmember__description">Product Designer</p>
@@ -242,10 +258,26 @@
 
                     <li class="members__item">
                         <div class="members__cards">
-                            <img srcset="./images/frontend-developer.jpg 1x, ./images/frontend-developer@2x.jpg 2x"
-                                src="./images/image5.jpg"
-                                alt="Зображення одного з членів команди, а саме Ольгу Рєпіну на позиції Frontend Developer"
-                                width="270">
+                            
+                                <picture>
+                                
+                                    <source srcset="
+                                                                                    ./images/team-1200-2@1x.jpg 1x,
+                                                                                    ./images/team-1200-2@2x.jpg 2x
+                                                                                  " media="(min-width: 1200px)" />
+                                
+                                    <source srcset="
+                                                                                    ./images/team-768-2@1x.jpg 1x,
+                                                                                    ./images/team-768-2@2x.jpg 2x
+                                                                                  " media="(min-width: 768px)" />
+                                
+                                    <source srcset="
+                                                                                    ./images/team-480-2@1x.jpg 1x,
+                                                                                    ./images/team-480-2@2x.jpg 2x
+                                                                                  " />
+                                    <img class="image" src="./images/team-480-2@1x.jpg"
+                                         alt="Зображення одного з членів команди, а саме Ольгу Рєпіну на позиції Frontend Developer" />
+                                </picture>
                             <div class="cardsmember">
                                 <h3 class="cardsmember__name">Ольга Рєпіна</h3>
                                 <p class="cardsmember__description">Frontend Developer</p>
@@ -278,10 +310,26 @@
 
                     <li class="members__item">
                         <div class="members__cards">
-                            <img srcset="./images/marketing-worker.jpg 1x, ./images/marketing-worker@2x.jpg 2x"
-                                src="./images/image6.jpg"
-                                alt="Зображення одного з членів команди, а саме Миколи Тарасова на позиції Marketing"
-                                width="270">
+                            
+                                <picture>
+                                
+                                    <source srcset="
+                                                                                                                    ./images/team-1200-3@1x.jpg 1x,
+                                                                                                                    ./images/team-1200-3@2x.jpg 2x
+                                                                                                                  " media="(min-width: 1200px)" />
+                                
+                                    <source srcset="
+                                                                                                                    ./images/team-768-3@1x.jpg 1x,
+                                                                                                                    ./images/team-768-3@2x.jpg 2x
+                                                                                                                  " media="(min-width: 768px)" />
+                                
+                                    <source srcset="
+                                                                                                                    ./images/team-480-3@1x.jpg 1x,
+                                                                                                                    ./images/team-480-3@2x.jpg 2x
+                                                                                                                  " />
+                                    <img class="image" src="./images/team-480-3@1x.jpg"
+                                         alt="Зображення одного з членів команди, а саме Миколи Тарасова на позиції Marketing" />
+                                </picture>
                             <div class="cardsmember">
                                 <h3 class="cardsmember__name">Микола Тарасов</h3>
                                 <p class="cardsmember__description">Marketing</p>
@@ -316,10 +364,28 @@
 
                     <li class="members__item">
                         <div class="members__cards">
-                            <img srcset="./images/designer-worker.jpg 1x, ./images/designer-worker@2x.jpg 2x"
-                                src="./images/image7.jpg"
-                                alt="Зображення одного з членів команди, а саме Миколи Єрмакова на позиції UI Designer"
-                                width="270">
+                            
+                                <picture>
+                                
+                                    <source srcset="
+                                                      ./images/team-1200-4@1x.jpg 1x,
+                                                        ./images/team-1200-4@2x.jpg 2x
+                                                      "
+                                        media="(min-width: 1200px)" />
+                                
+                                    <source srcset="
+                                                        ./images/team-768-4@1x.jpg 1x,
+                                                        ./images/team-768-4@2x.jpg 2x
+                                                      "
+                                        media="(min-width: 768px)" />
+                                
+                                    <source srcset="
+                                                        ./images/team-480-4@1x.jpg 1x,
+                                                        ./images/team-480-4@2x.jpg 2x
+                                                      " />
+                                    <img class="image" src="./images/team-480-4@1x.jpg"
+                                         alt="Зображення одного з членів команди, а саме Миколи Єрмакова на позиції UI Designer" />
+                                </picture>
                             <div class="cardsmember">
                                 <h3 class="cardsmember__name">Микола Єрмаков</h3>
                                 <p class="cardsmember__description">UI Designer</p>
@@ -355,7 +421,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- <section class="section">
             <div class="container clients">
