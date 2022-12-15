@@ -3,9 +3,20 @@
 
     &__title {
             background-color: #f5f4fa;
-            font-size: 36px;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: calc(33/28);
             text-align: center;
-            margin-bottom: 50px;
+            letter-spacing: 0.03em;
+            margin-bottom: 30px;
+
+        
+
+            @include desktop{
+                font-size: 36px;
+                    line-height: 1.16;
+                    margin-bottom: 50px;
+            }
         }
     
     
@@ -42,8 +53,12 @@
 
 
 .cardsmember {
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     padding-top: 30px;
+
+    @include desktop{
+        padding-bottom: 30px;
+    }
 
 &__name {
     letter-spacing: 0.03em;

@@ -630,12 +630,19 @@ img {
   width: 1200px;
 }
 .clients__title {
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   letter-spacing: 0.03em;
-  line-height: 1.16;
+  line-height: 1.1785714286;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 .clients__item {
   width: calc((100% - 30px) / 2);
@@ -1025,7 +1032,7 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: var(--color-background);
+  background: #2F303A;
 }
 .footer__container {
   display: -webkit-box;
@@ -1113,7 +1120,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(225, 255, 225, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   -webkit-transition: color var(--transition-duration) var(--transition-timing-function), fill var(--transition-duration) var(--transition-timing-function);
   transition: color var(--transition-duration) var(--transition-timing-function), fill var(--transition-duration) var(--transition-timing-function);
@@ -1306,6 +1313,8 @@ img {
 
 .hero {
   max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1438,9 +1447,19 @@ img {
 }
 .members__title {
   background-color: #f5f4fa;
-  font-size: 36px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1785714286;
   text-align: center;
-  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .members__title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 .members__list {
   -webkit-box-orient: vertical;
@@ -1485,8 +1504,13 @@ img {
 }
 
 .cardsmember {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   padding-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .cardsmember {
+    padding-bottom: 30px;
+  }
 }
 .cardsmember__name {
   letter-spacing: 0.03em;
